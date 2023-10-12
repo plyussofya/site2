@@ -1,0 +1,162 @@
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+section,
+header {
+  margin: 0;
+}
+
+body{
+	background-color: #FFFFFF;
+	font-family: Verdana;
+	font-size: 16pt;
+    margin-left: 40;
+    margin-right: 40;
+	line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+section{
+    margin-top: 30px;
+}
+h1, h2, h3{
+    text-align: center;
+}
+.photo{
+    width: 18%;
+	margin-top: 15px;
+    margin-right: auto; 
+	margin-left: auto; 
+}
+.icon{
+    width: 50px;
+}
+.center{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.flex { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex > div {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.flex > ol {
+    text-align: left;
+    margin-left: auto -2px;
+    margin-right: auto;
+    max-width: 400px;
+}
+ol {
+    list-style-type: none;
+}
+    
+    li {
+        counter-increment: item;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    li::before {
+        content: counter(item);
+        background-color: #AA96DA; 
+        color: #fff; 
+        border-radius: 50%; 
+        width: 30px;
+        height: 30px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: -40px; 
+        top: 0;
+    }
+
+.row{
+    max-width: 650px;
+    text-align: left;
+}
+.custom-line {
+    border: 1px solid #000;
+    margin: 20px 0;
+  }
+ .menu {
+	margin: 25px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.menuitem {
+    padding: 5px 20px;
+    background-color: #AA96DA;
+    border-radius: 30px;
+	margin: 5px;
+}
+
+.menuitem a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menuitem:hover {
+    background-color: #8867E4;
+}
+.reviews_block{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.review_card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+	width: 500px;
+    min-height: 300px;
+    margin: 10px;
+}
+.review_card .text{
+	border: 2px solid #AA96DA;
+	border-radius: 30px;
+	padding: 5px 20px;
+}
+
+p{
+	max-width: 30%; 
+    margin: 20px auto; 
+    text-align: center;
+	font-size: 16px;
+}
